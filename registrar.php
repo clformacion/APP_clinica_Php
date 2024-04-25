@@ -49,33 +49,7 @@
 
 <button type="submit" value="registrar" style="margin-left:100px; background-color: blue; color:white">REGISTRAR</button>
 
-
-
-
-
-
-
-
-
-
-
 </form>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 </div>
 
