@@ -1,0 +1,139 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>AULA 6</title>
+	<link rel="icon" type="700/jpg" href="img/logo.png" sizes="100x100">
+</head>
+<style>
+
+    table{
+
+      width:45%;
+      border-collapse:collapse;
+      border: 1px solid black;
+      background-color: royalblue;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+<body background="img/p.jpg" style="background-repeat: no-repeat; background-position: center center;" "width:900px">
+
+
+
+
+    <br><br><br>
+
+    <div align="center" ><img src="img/logo.png" style="width:500px; height: 200px;">
+        
+    </div><br><br>
+    
+        <h1 style="text-align: center";>Aula 6</h1>
+
+     
+   
+   
+   
+    <form name="login" style="align-content:center";>
+        <table width="200" border="0" align="center">
+            <tr>
+                <th scope="row"><h2>Usuario</h2></th>
+                <td>
+                    <span class="cnt">
+                        <input name="usuario" type="text" class="Input" value="" size="20" />
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th height="33" scope="row"><h2>Clave</h2></th>
+                <td>
+                    <span class="cnt">
+                        <input name="password" type="password" class="Input" value="" size="20" />
+                    </span>
+                </td>
+                <td>
+                    <span class="cnt">
+                        <input value="Entrar" target="_parent" onclick="Login()" type="button" class="boton" />
+                    </span>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row"><input type="reset" name="Borrar" id="Borrar" value="Reset" class="boton" /></th>
+            </tr>
+        </table>
+    </form>
+    
+    
+    <script language="JavaScript">
+        function Login() {
+            var done = 0;
+            var usuario = document.login.usuario.value;
+            var password = document.login.password.value;
+			
+			//soporte tecnico
+            if (usuario == "medico" && password == "1234") {
+                window.location = "registrar.php";
+            }
+			
+			//profesor
+            if (usuario == "recepcion" && password == "1234") {
+                window.location = "registro.php";
+            }
+			
+			//estudiante
+            if (usuario == "" && password == "") {
+                window.location = "clase1.html";
+            }
+			
+			
+			if (usuario == "" && password == "") {
+                window.location = "";
+            }
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+        }
+    </script>
+    </center>
+    <script language="Javascript">
+
+<!--    Begin
+        document.oncontextmenu = function () { return false }
+// End -->
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
